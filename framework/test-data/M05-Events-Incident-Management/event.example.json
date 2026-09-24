@@ -1,0 +1,15 @@
+{
+  "title": "UAT automation - Create Event",
+  "description": "Synthetic UAT event for testing. No real incident occurred.",
+  "specificArea": "UAT automation test",
+  "immediateActionsTaken": "Synthetic test only.",
+  "emergencyResponseInitiated": false,
+  "releaseOfEnergy": false,
+  "entity": { "query": "", "displayValue": "" },
+  "orgHierarchy": { "query": "", "displayValue": "" },
+  "location": { "query": "", "displayValue": "" },
+  "eventOwner": { "query": "", "displayValue": "" },
+  "leadInvestigator": { "query": "", "displayValue": "" },
+  "reporter": null,
+  "eventSupervisor": null
+}

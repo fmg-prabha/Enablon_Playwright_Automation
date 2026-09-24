@@ -1,0 +1,12 @@
+node_modules/
+.idea/
+.vscode/
+playwright-report/
+
+# Enablon local data and test output
+.local/
+test-results/
+playwright/.auth/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,8 @@
+{
+  "events": { "validRole": "Event Supervisor", "entity": "Solomon", "orgHierarchy": "Aerodrome Solomon", "location": "Solomon Drive" },
+  "risk": { "validRole": "Risk Validator", "entity": "Christmas Creek Mine", "orgHierarchy": "Projects", "existingRecordId": "RSK-000000" },
+  "controls": { "validRole": "Risk Local Administrator", "entity": "Christmas Creek Mine", "orgHierarchy": "Projects" },
+  "audits": { "validRole": "Audit Inspector", "entity": "Christmas Creek Mine", "orgHierarchy": "Projects" },
+  "actionPlans": { "validRole": "Action Plan Contributor", "entity": "Christmas Creek Mine", "orgHierarchy": "Projects", "existingRecordId": "ACT-000000" },
+  "reports": { "validRole": "Risk Validator", "entity": "Christmas Creek Mine", "orgHierarchy": "Projects" }
+}
