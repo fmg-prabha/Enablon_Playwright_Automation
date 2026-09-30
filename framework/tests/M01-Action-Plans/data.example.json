@@ -1,0 +1,55 @@
+{
+  "description": "Copy to .local/action-plan.json, verify lookup display names and action labels against UAT, then approve. Never store passwords here.",
+  "cases": [
+    {
+      "caseId": "M01-TC-001",
+      "approvedForUat": false,
+      "creatorRole": "Action.Actioncontributor1",
+      "titlePrefix": "UAT Automation - CreateActionPlans",
+      "description": "UAT TEST ONLY: exercise the Action Plans three-level approval workflow. Not an operational action.",
+      "updatedDescription": "UAT TEST ONLY: edited description to verify save persistence before assignment. Not an operational action.",
+      "hierarchyOfControl": "Not Applicable",
+      "dueInDays": 30,
+      "orgHierarchy": {
+        "query": "Fortescue Ltd",
+        "optionText": "Fortescue Ltd Fortescue Ltd",
+        "displayValue": "Fortescue Ltd"
+      },
+      "entity": {
+        "query": "Australian Fortescue Future In",
+        "optionText": "Australian Fortescue Future In Corp1 > Corp1.1 > Corp1.1.5 > Corp1.1.1.8 > 1051",
+        "displayValue": "Australian Fortescue Future In"
+      },
+      "responsible": {
+        "role": "ActionPlan.Actioncontributor2",
+        "query": "ActionPlan PersonResponsible",
+        "optionText": "ActionPlan PersonResponsible (ID000000001520)",
+        "displayValue": "ActionPlan PersonResponsible (ID000000001520)"
+      },
+      "l1": {
+        "role": "ActionPlan.ActionL1Reviewer",
+        "query": "ActionPlan L1Reviewer",
+        "optionText": "ActionPlan L1Reviewer (1) {ActionL1Reviewer}",
+        "displayValue": "ActionPlan L1Reviewer (1) {ActionL1Reviewer}"
+      },
+      "l2": {
+        "role": "ActionPlan.ActionL2Reviewer",
+        "query": "ActionPlan L2Reviewer",
+        "optionText": "ActionPlan L2Reviewer (1) {ActionL2Reviewer}",
+        "displayValue": "ActionPlan L2Reviewer (1) {ActionL2Reviewer}"
+      },
+      "l3": {
+        "role": "ActionPlan.ActionL3Approver",
+        "query": "ActionPlan L3Approver",
+        "optionText": "ActionPlan L3Approver (1) {ActionL3Approver}",
+        "displayValue": "ActionPlan L3Approver (1) {ActionL3Approver}"
+      },
+      "completionEvidenceRequired": false,
+      "completionComments": "UAT TEST ONLY: test action completed by the configured responsible person for workflow validation.",
+      "evidenceFiles": [],
+      "actions": { "responsible": "Complete", "l1": "Complete", "l2": "Complete", "l3": "Complete" },
+      "searchPageLimit": 50,
+      "retention": "retain-test-record"
+    }
+  ]
+}

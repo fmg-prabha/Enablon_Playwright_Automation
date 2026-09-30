@@ -1,14 +1,20 @@
 import { test } from '@playwright/test';
+import { resolve } from 'node:path';
+import { login } from '../../common-functions/login';
+import { navigateToM01ActionPlans } from '../../common-functions/navigate-to-m01-action-plans';
 
-// Business-case scaffold only. Define requirements in test-cases.md first.
-// Keep IDs stable when adding real steps, test data and assertions.
+const rolesFile = resolve(__dirname, '../../test-data/M01-Action-Plans/roles.example.json');
+const loginRole = 'Action.Actioncontributor1' as const;
+
+// Draft only: required form fields, approved values, expected status, and cleanup
+// must be supplied before this write-capable test can be enabled.
 test.describe('M01 | Action Plans | Business test cases', () => {
-  test.skip('M01-TC-001 | To be defined', async () => {
-    // Arrange: load approved module data and sign in with the required role.
-    // Act: execute the documented steps with verified selectors.
-    // Assert: verify each expected result and capture appropriate evidence.
-    // Write-capable cases require an explicit gate and cleanup plan.
-    throw new Error('Not implemented: complete M01-TC-001 before enabling it.');
+  test.fixme('M01-TC-001-CreateActionPlan', async ({ page }) => {
+    await login(page, { role: loginRole, rolesFile });
+    await navigateToM01ActionPlans(page);
+    await page.getByRole('button', { name: 'Create a new Action Plan', exact: true }).click();
+
+    // TODO: inspect the form, load approved fixture values, fill every required field,
+    // verify the saved record, and apply the approved cleanup plan.
   });
 });
-

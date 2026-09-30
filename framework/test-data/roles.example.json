@@ -1,0 +1,14 @@
+{
+  "description": "Role-to-environment-variable mapping. Store account passwords in runtime environment variables, never in this file.",
+  "roles": {
+    "Action.Actioncontributor1": { "usernameEnv": "ENABLON_ACTION_ACTIONCONTRIBUTOR1_USERNAME", "passwordEnv": "ENABLON_ACTION_ACTIONCONTRIBUTOR1_PASSWORD" },
+    "ActionPlan.AcionOwner": { "usernameEnv": "ENABLON_ACTIONPLAN_ACIONOWNER_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACIONOWNER_PASSWORD" },
+    "ActionPlan.Actioncontributor2": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONCONTRIBUTOR2_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONCONTRIBUTOR2_PASSWORD" },
+    "ActionPlan.ActionL1Reviewer": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONL1REVIEWER_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONL1REVIEWER_PASSWORD" },
+    "ActionPlan.ActionL2Reviewer": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONL2REVIEWER_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONL2REVIEWER_PASSWORD" },
+    "ActionPlan.ActionL3Approver": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONL3APPROVER_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONL3APPROVER_PASSWORD" },
+    "ActionPlan.ActionLocalAdministrator": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONLOCALADMINISTRATOR_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONLOCALADMINISTRATOR_PASSWORD" },
+    "ActionPlan.ActionReadOnly": { "usernameEnv": "ENABLON_ACTIONPLAN_ACTIONREADONLY_USERNAME", "passwordEnv": "ENABLON_ACTIONPLAN_ACTIONREADONLY_PASSWORD" },
+    "ActionPlanContractor": { "usernameEnv": "ENABLON_ACTIONPLANCONTRACTOR_USERNAME", "passwordEnv": "ENABLON_ACTIONPLANCONTRACTOR_PASSWORD" }
+  }
+}
