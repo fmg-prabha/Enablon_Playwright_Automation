@@ -2,6 +2,7 @@ node_modules/
 .idea/
 .vscode/
 playwright-report/
+artifacts/
 
 # Enablon local data and test output
 .local/
